@@ -1,1 +1,80 @@
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin:30% auto;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #cef;
+  border-color: #cef transparent #cef transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+.app {
+  display:block;
+  width: 100%;
+  text-align: center;
+}
+
+.angular-app--heading {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 80px;
+  background-color: #607D8B;
+  color: #fff;
+  line-height: 80px;
+}
+
+.angular-app--tabs-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0 0 15px 0;
+  padding: 0 5px;
+}
+
+.angular-app--tab-list-item {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  box-sizing:border-box;
+  border-bottom: 2px solid #fff;
+}
+
+.angular-app--tab-list-item.active {
+  border-bottom: 2px solid #607D8B;
+}
+
+.angular-app--tab-list-item:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #607D8B;
+}
+
+.angular-app--tab {
+  margin: 0 auto;
+  padding: 15px;
+}

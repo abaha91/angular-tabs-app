@@ -1,6 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-  <h1>{{ title }}</h1>
-  <app-tabs></app-tabs>
+  <h1 class="angular-app--heading">{{ title }}</h1>
 
+  <app-tabs class="angular-app--tabs-container">
+    <app-tab [tabTitle]="'First tab'">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum deleniti, dolor dolores esse excepturi fugiat fugit illum ipsum labore laudantium nemo neque nisi placeat praesentium vitae voluptatibus. Ipsum, iusto.
+    </app-tab>
+    <app-tab [tabTitle]="'Second tab'">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid ea labore sit vitae voluptatum! Corporis esse fugiat in ipsam natus officia perferendis praesentium qui, reiciendis sequi tempora vitae voluptates!
+    </app-tab>
+    <app-tab [tabTitle]="'Third tab'">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum deserunt dolore, eaque id ipsum iusto necessitatibus nesciunt odit placeat quo sequi? Facere nobis, nostrum quas qui rem repellat voluptatem.
+    </app-tab>
+    <app-tab [tabTitle]="'Forth tab'">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis consequatur ea error ipsa libero minima! Ea explicabo impedit obcaecati qui recusandae reiciendis sed sint voluptas voluptatem. Architecto, cum, non!
+    </app-tab>
+  </app-tabs>
 
   <router-outlet></router-outlet>

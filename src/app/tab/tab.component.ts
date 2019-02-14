@@ -1,17 +1,17 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, AfterContentInit } from '@angular/core';
 import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
   selector: 'app-tab',
-  styleUrls: ['./tab.component.scss'],
   template: `
-    <div>
+    <div class="angular-app--tab" [hidden]="!active">
       <ng-content></ng-content>
     </div>
   `
 })
 export class TabComponent {
   @Input() tabTitle;
+
   constructor(tabs: TabsComponent) {
     tabs.addTab(this);
   }
