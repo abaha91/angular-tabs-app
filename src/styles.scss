@@ -2,7 +2,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  margin:30% auto;
+  margin:10% auto;
 }
 .lds-dual-ring:after {
   content: " ";
@@ -63,6 +63,10 @@ body {
   font-size: 20px;
   box-sizing:border-box;
   border-bottom: 2px solid #fff;
+}
+
+.angular-app--tab-list-item.blocked {
+  pointer-events: none;
 }
 
 .angular-app--tab-list-item.active {
